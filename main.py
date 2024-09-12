@@ -65,7 +65,8 @@ def start_clicker_thread():
 # Function to start the clicker script
 def run_clicker_script():
     start_clicker_thread()
-    status_label.config(text="Press '`' to start clicking and 'z' to stop. Press esc button to quit")
+    status_label = tk.Label(root, text="Press '`' to start clicking and 'z' to stop. Press esc button to quit")
+    status_label.pack(pady=10)
 
 # Create the main application window
 root = tk.Tk()
